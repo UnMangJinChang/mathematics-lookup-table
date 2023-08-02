@@ -5,9 +5,9 @@ int main(int argc, char* argv[]) {
     int x = 2;
     int primes = 0;
     std::cout << 
-        "\\begin{longtable}{c c c c c c c c c c c c c c c}\n"
+        "\\begin{longtable}{c c c c c c c c c c c c c c}\n"
         "    \\hline\n";
-    while (primes < 10 * 300) {
+    while (primes < 14 * 50) {
         if (UMJCUtil::Math::Primes<int>::is_prime(x)) {
             primes++;
             if (primes % 12 == 1) std::cout << "    ";
