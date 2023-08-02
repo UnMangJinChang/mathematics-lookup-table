@@ -4,10 +4,11 @@
 int main(int argc, char* argv[]) {
     int x = 2;
     int primes = 0;
-    std::cout   << "\\begin{longtable}{c c c c c c c c c c c c c c c}\n"
-                << "    \\hline\n";
+    std::cout << 
+        "\\begin{longtable}{c c c c c c c c c c c c c c c}\n"
+        "    \\hline\n";
     while (primes < 10 * 300) {
-        if (umjc_util::math::Primes<int>::is_prime(x)) {
+        if (UMJCUtil::Math::Primes<int>::is_prime(x)) {
             primes++;
             if (primes % 12 == 1) std::cout << "    ";
             std::cout << x << " ";
@@ -16,7 +17,8 @@ int main(int argc, char* argv[]) {
         }
         x++;
     }
-    std::cout   << "    \\hline\n"
-                << "\\end{longtable}\n";
+    std::cout << 
+        "    \\hline\n"
+        "\\end{longtable}\n";
     return 0;
 }

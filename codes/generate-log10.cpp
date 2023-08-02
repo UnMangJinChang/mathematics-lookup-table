@@ -24,6 +24,7 @@ int main(int argc, char** argv) {
             std::pair<int, int> sci = get_sci_notation(y, 5);
             std::cout << "\\({" << sci.first << "}_{" << sci.second << "}\\)" << (j + 1 < 10 ? " & " : "\\\\\n");
         }
+        if (i % 10 == 9) std::cout << "    \\hline\n";
     }
     std::cout   << "\\end{longtable}\n";
     return 0;
