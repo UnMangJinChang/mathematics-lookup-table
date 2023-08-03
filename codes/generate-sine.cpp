@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
         "    \\hline\\hline\n";
     for (int i = 0; i < 100; i++) {
         old_flags = std::cout.flags();
-        std::cout << "    ""0." << std::setw(2) << std::left << std::setfill('0') << i << " & ";
+        std::cout << "    ""0." << std::setw(2) << std::right << std::setfill('0') << i << " & ";
         std::cout.flags(old_flags);
         for (int j = 0; j < 10; j++) {
             double x = static_cast<double>(i * 10 + j);
