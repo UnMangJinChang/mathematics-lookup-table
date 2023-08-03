@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
             x /= 1000.0;
             double y = std::sin(x * PI_2);
             std::pair<int, int> sci = get_sci_notation(y, 5);
-            std::cout << "\\({" << sci.first << "}_{" << sci.second << "}\\)" << (j + 1 < 10 ? " & " : "\\\\\n");
+            std::cout << "\\({" << sci.first << "}_{" << std::showpos << sci.second << std::noshowpos << "}\\)" << (j + 1 < 10 ? " & " : "\\\\\n");
         }
         if (i % 10 == 9) std::cout << "    \\hline\n";
     }
