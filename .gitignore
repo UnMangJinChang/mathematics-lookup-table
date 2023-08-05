@@ -1,7 +1,5 @@
-generate-log10
-generate-normal
-generate-primes
-generate-sine
+generate-*
+!codes/*
 lookup-table.*
 !lookup-table.pdf
 !lookup-table.tex
