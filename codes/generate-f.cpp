@@ -19,7 +19,7 @@ constexpr std::pair<int, int> get_sci_notation(double x, int digits = 5) {
 }
 
 int main() {
-    constexpr double SIGNIFICANCE_LEVEL[] = {0.001, 0.005, 0.025, 0.05, 0.1};
+    constexpr double SIGNIFICANCE_LEVEL[] = {0.001, 0.005, 0.010, 0.025, 0.05};
     std::ios_base::fmtflags old_flags;
     for (int k = 0; k < 5; k++) {
         std::cout << 
